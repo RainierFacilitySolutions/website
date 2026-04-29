@@ -160,11 +160,35 @@ li{margin-bottom:.4em}
 .nav-dropdown-menu a{display:block;padding:8px 12px;border-radius:8px;font-size:13px}
 .nav-dropdown-menu a:hover{background:var(--primary-bg)}
 
-.header-cta{display:flex;align-items:center;gap:10px}
+.header-cta{display:flex;align-items:center;gap:15px}
+/* Free-Quote header button — 1.5× larger than the default btn-sm */
+.header-cta .btn-sm{
+  padding:12px 21px;
+  font-size:18px;
+  border-radius:12px;
+}
 .header-phone{
   font-weight:600;color:var(--rainier-dark);font-size:14px;
   display:inline-flex;align-items:center;gap:6px;
 }
+
+/* Phone icon — replaces the 📞 emoji used everywhere on the site.
+   Sized in em so it scales with surrounding text; default color is brand green.
+   On green buttons (.btn-green) we override to white so the icon stays visible. */
+.phone-icon{
+  width:1.15em;
+  height:1.15em;
+  flex-shrink:0;
+  color:var(--rainier-green);
+  vertical-align:-0.18em;
+  display:inline-block;
+  margin-right:0.35em;
+}
+.btn-green .phone-icon{color:#fff}
+/* Inside flex parents (.btn, .header-phone) the parent's gap also applies,
+   so suppress the icon's margin there to avoid double-spacing. */
+.btn .phone-icon,
+.header-phone .phone-icon{margin-right:0}
 .header-phone:hover{text-decoration:none;color:var(--rainier-green-deep)}
 
 /* Mobile nav toggle */
