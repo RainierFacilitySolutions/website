@@ -132,10 +132,11 @@ li{margin-bottom:.4em}
 .brand-text strong{color:var(--rainier-dark);font-size:18px;letter-spacing:0.02em}
 .brand-text span{color:var(--text-muted);font-size:11px;text-transform:uppercase;letter-spacing:0.08em}
 
-.main-nav{display:flex;align-items:center;gap:6px;margin-left:auto}
+.main-nav{display:flex;align-items:center;gap:5px;margin-left:auto}
 .main-nav a{
   color:var(--text-primary);font-weight:500;font-size:14px;
   padding:8px 14px;border-radius:8px;transition:all .15s;
+  white-space:nowrap;
 }
 .main-nav a:hover{background:var(--primary-bg);color:var(--primary);text-decoration:none}
 .main-nav a.active{background:var(--primary-bg);color:var(--primary)}
@@ -170,6 +171,7 @@ li{margin-bottom:.4em}
 .header-phone{
   font-weight:600;color:var(--rainier-dark);font-size:14px;
   display:inline-flex;align-items:center;gap:6px;
+  white-space:nowrap;
 }
 
 /* Phone icon — replaces the 📞 emoji used everywhere on the site.
