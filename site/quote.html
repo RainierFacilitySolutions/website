@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Cleaning Quote | Rainier Facility Solutions — Greater Seattle Area</title>
+<meta name="description" content="Get a free, no-pressure facility cleaning quote from Rainier Facility Solutions. Janitorial, floor &amp; carpet care, exterior, post-construction, emergency. Most quotes returned within one business day.">
+<link rel="canonical" href="https://rainierfacilitysolutions.com/quote.html">
+<meta property="og:title" content="Free Cleaning Quote | Rainier Facility Solutions">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#212269">
+<link rel="icon" type="image/png" href="assets/rainier-facilities-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .stepper{display:flex;gap:6px;margin-bottom:24px}
+  .step-pill{flex:1;height:6px;border-radius:99px;background:var(--border-mid)}
+  .step-pill.done{background:var(--rainier-green)}
+  .step-pill.current{background:linear-gradient(90deg,var(--rainier-green) 50%,var(--border-mid) 50%)}
+  .qstep{display:none}
+  .qstep.active{display:block}
+  .opt-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  .opt{
+    border:2px solid var(--card-border);background:#fff;
+    border-radius:14px;padding:16px;cursor:pointer;text-align:center;
+    transition:all .15s;font-weight:600;color:var(--text-primary);
+  }
+  .opt:hover{border-color:var(--primary-light);transform:translateY(-1px)}
+  .opt.selected{border-color:var(--rainier-green);background:var(--green-bg);color:var(--green-text);box-shadow:0 0 0 3px rgba(111,191,82,0.15)}
+  .opt small{display:block;font-weight:400;color:var(--text-muted);margin-top:4px;font-size:12px}
+  .qnav{display:flex;justify-content:space-between;gap:12px;margin-top:24px}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-bar">
+    <a href="index.html" class="brand"><img src="assets/rainier-facilities-logo.png" alt="Rainier Facility Solutions" width="144" height="96"></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <div class="nav-dropdown"><button>Services <span aria-hidden="true">▾</span></button>
+        <div class="nav-dropdown-menu">
+          <a href="services/janitorial.html">Janitorial Cleaning</a>
+          <a href="services/floor-carpet-care.html">Floor &amp; Carpet Care</a>
+          <a href="services/exterior-cleaning.html">Exterior Cleaning</a>
+          <a href="services/post-construction.html">Post-Construction</a>
+          <a href="services/one-time-emergency.html">One-Time / Emergency</a>
+        </div>
+      </div>
+      <a href="service-areas.html">Service Areas</a>
+      <a href="about.html">About</a>
+      <a href="testimonials.html">Reviews</a>
+      <a href="faq.html">FAQ</a>
+      <a href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:+12533273242" class="header-phone">📞 253-327-3242</a>
+      <a href="quote.html" class="btn btn-green btn-sm">Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumbs"><a href="index.html">Home</a> &nbsp;›&nbsp; Free Quote</nav>
+    <h1>Free, no-pressure quote.</h1>
+    <p>Three quick steps. Most quotes are returned within one business day.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:780px">
+    <form class="card" id="quoteForm" novalidate>
+      <div class="stepper" aria-hidden="true">
+        <span class="step-pill current"></span>
+        <span class="step-pill"></span>
+        <span class="step-pill"></span>
+      </div>
+
+      <!-- STEP 1 -->
+      <fieldset class="qstep active" data-step="1">
+        <legend class="eyebrow">Step 1 of 3</legend>
+        <h2 class="mb-8">What kind of cleaning do you need?</h2>
+        <p class="muted mb-24">Pick the closest match — we can customize from there.</p>
+        <div class="opt-grid" role="radiogroup" aria-label="Service type">
+          <button type="button" class="opt" data-field="serviceType" data-val="Recurring janitorial">Recurring janitorial <small>daily · weekly · custom</small></button>
+          <button type="button" class="opt" data-field="serviceType" data-val="Floor &amp; carpet care">Floor &amp; carpet care <small>extraction · VCT · refinishing</small></button>
+          <button type="button" class="opt" data-field="serviceType" data-val="Exterior cleaning">Exterior cleaning <small>windows · façade · awning</small></button>
+          <button type="button" class="opt" data-field="serviceType" data-val="Post-construction">Post-construction</button>
+          <button type="button" class="opt" data-field="serviceType" data-val="One-time / deep clean">One-time / deep clean</button>
+          <button type="button" class="opt" data-field="serviceType" data-val="Emergency response">Emergency response <small>water · biohazard · urgent</small></button>
+          <button type="button" class="opt" data-field="serviceType" data-val="Multiple services / portfolio">Multiple services / portfolio</button>
+          <button type="button" class="opt" data-field="serviceType" data-val="Not sure">Not sure — help me decide</button>
+        </div>
+      </fieldset>
+
+      <!-- STEP 2 -->
+      <fieldset class="qstep" data-step="2">
+        <legend class="eyebrow">Step 2 of 3</legend>
+        <h2 class="mb-8">Tell us about the facility.</h2>
+        <p class="muted mb-24">Approximate is fine — we'll confirm details on the walkthrough.</p>
+        <div class="form-grid">
+          <div class="form-row">
+            <label for="facility">Facility type</label>
+            <select class="select" id="facility" name="facility">
+              <option>Office</option>
+              <option>Medical / dental</option>
+              <option>Retail / showroom</option>
+              <option>Industrial / warehouse</option>
+              <option>School / childcare</option>
+              <option>Multi-tenant / HOA</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="sqft">Approximate sq ft</label>
+            <input class="input" id="sqft" name="sqft" type="number" min="0" placeholder="e.g. 8500">
+          </div>
+          <div class="form-row">
+            <label for="frequency">How often?</label>
+            <select class="select" id="frequency" name="frequency">
+              <option>Daily (M–F)</option>
+              <option>3× per week</option>
+              <option>Weekly</option>
+              <option>Bi-weekly</option>
+              <option>Monthly</option>
+              <option>One-time</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="window">Preferred service window</label>
+            <select class="select" id="window" name="window">
+              <option>After hours / overnight</option>
+              <option>Early morning before opening</option>
+              <option>During business hours</option>
+              <option>Weekends</option>
+              <option>Flexible</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="extras">Anything special?</label>
+          <textarea class="input" id="extras" name="extras" rows="3" placeholder="Number of restrooms, special floor types, security requirements, COI needs, sister-site portfolio, etc."></textarea>
+        </div>
+      </fieldset>
+
+      <!-- STEP 3 -->
+      <fieldset class="qstep" data-step="3">
+        <legend class="eyebrow">Step 3 of 3</legend>
+        <h2 class="mb-8">Where should we send your quote?</h2>
+        <p class="muted mb-24">We'll never share your info. Most quotes return within one business day.</p>
+        <div class="form-grid">
+          <div class="form-row"><label for="qname">Your name <span class="req">*</span></label><input class="input" id="qname" name="name" type="text" required autocomplete="name"></div>
+          <div class="form-row"><label for="qcompany">Company / facility name</label><input class="input" id="qcompany" name="company" type="text" autocomplete="organization"></div>
+        </div>
+        <div class="form-grid">
+          <div class="form-row"><label for="qphone">Phone <span class="req">*</span></label><input class="input" id="qphone" name="phone" type="tel" required autocomplete="tel"></div>
+          <div class="form-row"><label for="qemail">Email <span class="req">*</span></label><input class="input" id="qemail" name="email" type="email" required autocomplete="email"></div>
+        </div>
+        <div class="form-grid">
+          <div class="form-row"><label for="qcity">City <span class="req">*</span></label><input class="input" id="qcity" name="city" type="text" required autocomplete="address-level2"></div>
+          <div class="form-row"><label for="qzip">ZIP code</label><input class="input" id="qzip" name="zip" type="text" inputmode="numeric" pattern="[0-9]{5}" autocomplete="postal-code"></div>
+        </div>
+      </fieldset>
+
+      <div class="qnav">
+        <button type="button" id="backBtn" class="btn btn-secondary" disabled>← Back</button>
+        <button type="button" id="nextBtn" class="btn btn-green btn-lg">Next →</button>
+        <button type="submit" id="submitBtn" class="btn btn-green btn-lg" style="display:none">Get My Free Quote</button>
+      </div>
+    </form>
+
+    <div class="card" id="thankyou" style="display:none;text-align:center;margin-top:24px">
+      <h2 style="color:var(--rainier-green-deep)">Thanks — we got it. ✓</h2>
+      <p>We'll review your details and follow up shortly. For anything urgent, call <a href="tel:+12533273242"><strong>253-327-3242</strong></a>.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/rainier-facilities-logo.png" alt="Rainier Facility Solutions" width="168" height="112"></div>
+        <p>Western Washington's trusted cleaning partner. Bonded, insured, locally owned in Sumner, WA.</p>
+        <p style="margin-top:16px"><a href="tel:+12533273242"><strong>📞 253-327-3242</strong></a></p>
+        <p><a href="mailto:hello@rainierfacilitysolutions.com">hello@rainierfacilitysolutions.com</a></p>
+        <p>823 Main Street, Suite 2<br>Sumner, WA 98390</p>
+      </div>
+      <div><h4>Services</h4><ul class="footer-list"><li><a href="services/janitorial.html">Janitorial Cleaning</a></li><li><a href="services/floor-carpet-care.html">Floor &amp; Carpet Care</a></li><li><a href="services/exterior-cleaning.html">Exterior Cleaning</a></li><li><a href="services/post-construction.html">Post-Construction</a></li><li><a href="services/one-time-emergency.html">One-Time / Emergency</a></li></ul></div>
+      <div><h4>Company</h4><ul class="footer-list"><li><a href="about.html">About</a></li><li><a href="testimonials.html">Reviews</a></li><li><a href="faq.html">FAQ</a></li><li><a href="service-areas.html">Service Areas</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Hours</h4><ul class="footer-list"><li><strong>Open 24/7</strong></li><li>Always-on dispatch for emergencies</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="yr"></span> Rainier Facility Solutions.</span><span><a href="privacy.html">Privacy</a> · <a href="sitemap.xml">Sitemap</a></span></div>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+<script src="assets/forms.js" defer></script>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){
+  const form = document.getElementById('quoteForm');
+  const steps = form.querySelectorAll('.qstep');
+  const pills = form.querySelectorAll('.step-pill');
+  const back = document.getElementById('backBtn');
+  const next = document.getElementById('nextBtn');
+  const submit = document.getElementById('submitBtn');
+  let i = 0;
+
+  function render(){
+    steps.forEach((s,n)=>s.classList.toggle('active', n===i));
+    pills.forEach((p,n)=>{
+      p.classList.remove('done','current');
+      if(n<i) p.classList.add('done');
+      else if(n===i) p.classList.add('current');
+    });
+    back.disabled = i===0;
+    next.style.display = i<steps.length-1 ? '' : 'none';
+    submit.style.display = i===steps.length-1 ? '' : 'none';
+  }
+  render();
+
+  form.querySelectorAll('.opt').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      const field = b.dataset.field;
+      form.querySelectorAll(`.opt[data-field="${field}"]`).forEach(o=>o.classList.remove('selected'));
+      b.classList.add('selected');
+      setTimeout(()=>{ if(i<steps.length-1){ i++; render(); }}, 200);
+    });
+  });
+
+  next.addEventListener('click', ()=>{
+    if(i===0){
+      const picked = form.querySelector('.opt.selected[data-field="serviceType"]');
+      if(!picked){ alert('Please pick a service type.'); return; }
+    }
+    if(i<steps.length-1){ i++; render(); }
+  });
+  back.addEventListener('click', ()=>{ if(i>0){ i--; render(); }});
+
+  form.addEventListener('submit', e=>{
+    e.preventDefault();
+    const required = ['qname','qphone','qemail','qcity'];
+    for(const id of required){
+      const el = document.getElementById(id);
+      if(!el.value.trim()){ el.focus(); return; }
+    }
+    const picked = form.querySelector('.opt.selected[data-field="serviceType"]');
+    const extra = {
+      form_type: 'quote',
+      service_type: picked ? picked.dataset.val : null,
+    };
+    window.RFS_submitForm(form, window.RFS_WEBHOOKS.quote, document.getElementById('thankyou'), null, extra);
+  });
+})();
+</script>
+</body>
+</html>
