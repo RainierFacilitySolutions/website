@@ -99,7 +99,7 @@ window.RFS_WEBHOOKS = window.RFS_WEBHOOKS || {
           <label class="consent-label" for="rfsLmSms">
             <input type="checkbox" id="rfsLmSms" name="sms_consent" value="yes">
             <span class="consent-text">
-              <strong>SMS notifications (optional).</strong> By checking this box you agree to receive service-related text messages from <strong>Rainier Facility Solutions</strong> at the phone number provided. <strong>Message frequency varies. Msg &amp; data rates may apply.</strong> Reply <strong>STOP</strong> to cancel, <strong>HELP</strong> for help. Consent is not a condition of any purchase. Mobile information will not be shared with third parties or affiliates for marketing or promotional purposes. See our <a href="terms.html#sms-program" target="_blank">SMS Terms</a> and <a href="privacy.html#sms-program" target="_blank">Privacy Policy</a>.
+              <strong>SMS notifications (optional).</strong> By checking this box you agree to receive service-related text messages from <strong>FCB Holdings LLC dba Rainier Facility Solutions</strong> at the phone number provided. <strong>Message frequency varies. Msg &amp; data rates may apply.</strong> Reply <strong>STOP</strong> to cancel, <strong>HELP</strong> for help. Consent is not a condition of any purchase. Mobile information will not be shared with third parties or affiliates for marketing or promotional purposes. See our <a href="terms.html#sms-program" target="_blank">SMS Terms</a> and <a href="privacy.html#sms-program" target="_blank">Privacy Policy</a>.
             </span>
           </label>
         </div>
