@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /404.html
 
-Sitemap: https://rainiercleaningsolutions.com/sitemap.xml
+Sitemap: https://www.rainierfacilitysolutions.com/sitemap.xml

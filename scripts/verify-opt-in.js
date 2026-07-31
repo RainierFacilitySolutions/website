@@ -64,7 +64,15 @@ const pass = (msg) => log(true, msg);
   const consoleErrors = [];
   const failedRequests = [];
   page.on('console', (m) => { if (m.type() === 'error') consoleErrors.push(m.text()); });
-  page.on('requestfailed', (r) => failedRequests.push(`${r.url()}  (${r.failure()?.errorText || 'unknown'})`));
+  page.on('requestfailed', (r) => {
+    const err = r.failure()?.errorText || 'unknown';
+    // net::ERR_ABORTED means the request was cancelled — almost always because
+    // we navigated away while a lazy-loaded image was still in flight. That is
+    // normal browser behaviour, not a broken resource, and made this check
+    // flaky. Resource availability is already proven in sections [2] and [3].
+    if (err.includes('ERR_ABORTED')) return;
+    failedRequests.push(`${r.url()}  (${err})`);
+  });
   page.on('response', (r) => {
     // Surface 4xx / 5xx on subresources too
     if (r.status() >= 400) failedRequests.push(`${r.url()}  (HTTP ${r.status()})`);
@@ -78,6 +86,17 @@ const pass = (msg) => log(true, msg);
   else { fail(`${consoleErrors.length} console error(s):`); consoleErrors.forEach(e => console.log('      ', e)); }
 
   console.log('\n[2] Both inline screenshots resolve');
+  // The screenshots use loading="lazy" and sit below the fold, so they do not
+  // fetch on networkidle alone. Scroll them into view and await decode()
+  // before measuring — otherwise this check is racy and reports false failures.
+  await page.evaluate(async () => {
+    const imgs = Array.from(document.querySelectorAll('main img'));
+    for (const i of imgs) {
+      i.loading = 'eager';
+      i.scrollIntoView({ block: 'center' });
+    }
+    await Promise.all(imgs.map(i => i.decode().catch(() => {})));
+  });
   const imgChecks = await page.evaluate(() => {
     const imgs = Array.from(document.querySelectorAll('main img'));
     return imgs.map(i => ({
