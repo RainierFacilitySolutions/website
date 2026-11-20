@@ -114,12 +114,9 @@ window.RFS_WEBHOOKS = window.RFS_WEBHOOKS || {
   </div>
 </div>`;
 
-  // Path-aware link rewriter — service-page popups need ../terms.html etc.
-  const inSubdir = location.pathname.includes('/services/');
-  const fixedHTML = inSubdir
-    ? HTML.replace(/href="(terms\.html|privacy\.html)/g, 'href="../$1')
-        .replace(/href="(terms\.html|privacy\.html)#/g, 'href="../$1#')
-    : HTML;
+  // Root-absolute links, so the popup's Terms and Privacy links work on pages
+  // in any folder (services/, commercial-cleaning/<city>/ ...).
+  const fixedHTML = HTML.replace(/href="(terms\.html|privacy\.html)/g, 'href="/$1');
 
   function inject() {
     // Don't double-inject
